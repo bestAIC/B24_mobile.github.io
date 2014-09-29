@@ -41,9 +41,9 @@ function MMenu() {
 
 // Carousel
 function SCarousel() {
-    $('.slider').slick({
-        dots:true
-    });                                                         
+  $('.slider').slick({
+    dots:true
+  });
 }
 
 // Styler
