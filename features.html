@@ -11,24 +11,29 @@
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
 <script type="text/javascript" src="js/b24.mobile.js"></script>
 </head>
-<body id="b24_apps">
+<body id="b24_features">
 
   <div id="menu">
-    <ul>
-      <li><a href="#">Что это?</a></li>
-      <li><a href="#">Возможности</a></li>
-      <li><a href="#">Цены</a></li>
-      <li><a href="#">Приложения</a></li>
-      <li><a href="#">Партнеры</a></li>
-      <li><a href="#">Поддержка</a></li>
-    </ul>
-    
-    <a href="#" class="enter">ВХОД</a>
+    <div class="menu_cover">
+      <ul>
+        <li><a href="#">Что это?</a></li>
+        <li><a href="#">Возможности</a></li>
+        <li><a href="#">Цены</a></li>
+        <li><a href="#">Приложения</a></li>
+        <li><a href="#">Партнеры</a></li>
+        <li><a href="#">Поддержка</a></li>
+      </ul>
+      
+      <a href="#" class="btn blue">ВХОД</a>
 
-    <ul class="lang">
-      <li>RUS</li>
-      <li>EN</li>
-    </ul>
+      <div class="lang">
+        <b class="selected ru">RUS</b>
+        <div>
+          <b class="en">ENG</b>
+          <b class="de">DEU</b>
+        </div>  
+      </div>
+    </div>  
   </div>
 
   <div class="wrap">
@@ -38,78 +43,78 @@
     </div>
 
     <ul class="content">
-      <li id="row_1">
-        <h2>Возможности</h2>
-        
-        <form>
-          <select name="category">
-			      <option value="social" selected="">Соцсеть</option>
-  					<option value="tasks">Задачи и проекты</option>
-  					<option value="communications">Чат и видеозвонки</option>
-  					<option value="docs">Документы</option>
-  					<option value="disk">Диск</option>
-  					<option value="planning">Календари</option>
-  					<option value="mail">Почта</option>
-  					<option value="crm">CRM</option>
-  					<option value="call">Телефония</option>
-  					<option value="company">HR</option>
-  					<option value="apps">Мобильность</option>
-  					<option value="more">Еще</option>
-          </select>
-        </form>
+      <li id="row_1" class="bg_c_1">
+        <div class="limiter">
+          <h2>Возможности</h2>
+
+          <form>
+            <select name="category">
+                <option value="social" selected="">Соцсеть</option>
+                <option value="tasks">Задачи и проекты</option>
+                <option value="communications">Чат и видеозвонки</option>
+                <option value="docs">Документы</option>
+                <option value="disk">Диск</option>
+                <option value="planning">Календари</option>
+                <option value="mail">Почта</option>
+                <option value="crm">CRM</option>
+                <option value="call">Телефония</option>
+                <option value="company">HR</option>
+                <option value="apps">Мобильность</option>
+                <option value="more">Еще</option>
+            </select>
+          </form>
+        </div>
         
       </li>
       <li id="row_2">
-        <h2>Общайтесь и принимайте 
-        решения. Быстро и легко</h2>
+        <div class="limiter">
+          <h2>Общайтесь и принимайте решения. Быстро и легко</h2>
+          
+          <p>Вы помните свои ощущения от общения
+          в социальных сетях? Легко, удобно, все понятно и доступно. 
+          Все обсуждения происходят быстро, в кругу друзей 
+          и знакомых. Представьте, что также быстро и легко можно общаться 
+          с коллегами... <a href="#">Ещё</a></p>
+        </div><!-- limiter -->
+        <i class="screenshot"><img src="pic/pic_01.png" alt="" /><hr class="rainbow"/></i>
         
-        <p>Вы помните свои ощущения от общения
-        в социальных сетях? Легко, удобно, все понятно и доступно. 
-        Все обсуждения происходят быстро, в кругу друзей 
-        и знакомых. Представьте, что также быстро и легко можно общаться 
-        с коллегами... <a href="#">Ещё</a></p>
-        
-        <i class="screenshot" style="background-image: url();"></i>
-        <hr class="rainbow"/>
+        <div class="limiter">
+          <h2>Живая лента</h2>
 
-        <h2>Живая лента</h2>
+          <p>«Живая лента» – единая лента событий 
+          в «Битрикс24», интерактивная лента всех изменений 
+          на вашем корпоративном портале. 
+          «Живая лента» объединяет все рабочие и социальные инструменты
+           – задачи и рабочие отчеты, блоги и фотогалереи. <a href="#">Ещё</a></p>
+        </div><!-- limiter -->
+        <a class="load_video" href="#"><img src="img/play.png" alt=""><hr class="rainbow"/></a>
         
-        <p>«Живая лента» – единая лента событий 
-        в «Битрикс24», интерактивная лента всех изменений 
-        на вашем корпоративном портале. 
-        «Живая лента» объединяет все рабочие и социальные инструменты
-         – задачи и рабочие отчеты, блоги и фотогалереи. <a href="#">Ещё</a></p>
+        <div class="limiter">
+          <h2>Мне нравится!</h2>
+          
+          <p>«Живая лента» интерактивна – можно сразу комментировать сообщения, отмечать сообщения кнопкой «Мне нравится». Отметка «Мне нравится» показывает мнение сотрудников, влияет на рейтинг записи, файла - в результатах поиска эти ... <a href="#">Ещё</a></p>
+        </div><!-- limiter -->
+
+        <i class="screenshot"><img src="pic/pic_03.jpg" alt="" /><hr class="rainbow"/></i>
         
-        <a class="load_video" href="#"><img src=""></a>
-        <hr class="rainbow"/>
-        
-        <h2>Мне нравится!</h2>
-        
-        <p>«Живая лента» интерактивна – можно сразу комментировать сообщения, 
-        отмечать сообщения кнопкой «Мне нравится». 
-        Отметка «Мне нравится» показывает мнение сотрудников, 
-        влияет на рейтинг записи, файла
-         - в результатах поиска эти ... <a href="#">Ещё</a></p>
-        
-        <i class="screenshot" style="background-image: url();"></i>
-        <hr class="rainbow"/>               
-        
-        <ul class="add_nav">        
-					<li><a href="#">Задачи и проекты</a></li>
-					<li><a href="#">Чат и видеозвонки</a></li>
-					<li><a href="#">Документы</a></li>
-					<li><a href="#">Диск</a></li>
-					<li><a href="#">Календари</a></li>
-					<li><a href="#">Почта</a></li>
-					<li><a href="#">CRM</a></li>
-					<li><a href="#">Телефония</a></li>
-					<li><a href="#">HR</a></li>
-					<li><a href="#">Мобильность</a></li>
-					<li><a href="#">Еще</a></li>          
-        </ul>        
+        <div class="limiter">
+          <ul class="add_nav">        
+            <li><a href="#">Задачи и проекты</a></li>
+            <li><a href="#">Чат и видеозвонки</a></li>
+            <li><a href="#">Документы</a></li>
+            <li><a href="#">Диск</a></li>
+            <li><a href="#">Календари</a></li>
+            <li><a href="#">Почта</a></li>
+            <li><a href="#">CRM</a></li>
+            <li><a href="#">Телефония</a></li>
+            <li><a href="#">HR</a></li>
+            <li><a href="#">Мобильность</a></li>
+            <li><a href="#">Еще</a></li>          
+          </ul>
+        </div><!-- limiter -->
         
       </li>      
-      <li id="row_3">
+      <li id="row_3" class="limiter">
         <div class="counter companies">
           <div class="number">250 000+</div>
         </div>
