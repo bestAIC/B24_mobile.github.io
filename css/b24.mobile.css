@@ -720,6 +720,8 @@ SPAN.icomoon{
 }
 #footer .mobile_title{
   color: #839199;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 #footer .search_field {
