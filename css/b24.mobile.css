@@ -77,6 +77,21 @@ UL, UL LI {list-style-type:none;}
 
 /**/
 
+H2{
+  padding-top: 48px;
+  margin-bottom: 16px;
+  font: 23px/29px 'geometria_regular', sans-serif;
+  letter-spacing: 0.4px;
+}
+p{
+  font: 14px/21px 'geometria_light', sans-serif;
+}
+IMG{
+  width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
 .bg_c_1 {
   background-color:#2dd2f7; 
 }
@@ -419,13 +434,13 @@ SPAN.icomoon{
 /**/  
 
 .wrap {
-  width:82%;
+  width:100%;
   min-width: 400px;
   max-width: 736px;
   min-height:100%;
   position:relative;
   overflow:hidden;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 #header {
@@ -667,6 +682,8 @@ SPAN.icomoon{
 #footer {
   background: #46535a;
   color:#fff;
+  padding: 49px 10px 35px;
+  text-align: center;
 }
 
 #footer .search  {
@@ -675,7 +692,16 @@ SPAN.icomoon{
   width: 50%;
   margin: 0 auto;
 }
-
+#footer .nav{
+  text-transform: uppercase;
+  font: 14px/36px 'geometria_medium', sans-serif;
+}
+#footer .nav a{
+  color: #fff;
+}
+#footer .mobile_title{
+  color: #839199;
+}
 
 #footer .search_field {
   border: none;
@@ -709,20 +735,54 @@ SPAN.icomoon{
 
 
 /* AD landskape */
-#row_1.bg_c_1{
-  padding: 48px 0 32px;
+.limiter{
+  padding: 0 20px;
+  position: relative;
 }
-#row_1 H2{
-  margin-bottom: 18px;
+.screenshot,
+.load_video{
+  display: inline-block;
+  margin-top: 25px;
+  position: relative;
+}
+#b24_features .load_video{
+  background: url('../pic/pic_02.jpg') 50% 0% / cover no-repeat;
+  position: relative;
   text-align: center;
-  color: #fff;
-  font: 23px/29px 'geometria_regular', sans-serif;
-  letter-spacing: 0.4px;
+  width: 100%;
+  min-height: 399px;
 }
-#row_1 FORM{
+#b24_features .load_video img{
+  width: auto;
+}
+
+#row_1 h2{
+  color: #fff;
+  text-align: center;
+}
+#b24_features #row_1{
+  padding-bottom: 32px;
+}
+#b24_features #row_1 FORM{
+  margin-top: 2px;
   text-align: center;
 }
 
+UL.add_nav{
+  margin-top: 34px;
+}
+UL.add_nav LI:first-child{
+  border-top: 2px solid #bdd8e6;
+}
+UL.add_nav LI{
+  border-bottom: 2px solid #bdd8e6;
+}
+UL.add_nav LI A{
+  font: 14px 'geometria_medium', sans-serif;
+  color: #7e939c;
+  padding: 18px 0;
+  display: block;
+}
 
 /*Portrait*/
 @media (max-width:480px) {
