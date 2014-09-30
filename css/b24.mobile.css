@@ -722,18 +722,6 @@ A.btn{
 #b24_main #row_4 .star {
   right: -5px;
   top: 34px;
-  line-height: 80px;
-}
-#b24_main #row_4 .star_wrap{
-  vertical-align: middle;
-  display: inline-block;
-  line-height: 20px;
-}
-#b24_main #row_4 .star BIG{
-  font: 26px/16px 'geometria_regular', sans-serif;
-}
-#b24_main #row_4 .star SMALL{
-  font: 10px/16px 'geometria_regular', sans-serif;
 }
 #b24_main #row_4 H2 + P{
   padding-right: 58px;
@@ -745,26 +733,28 @@ A.btn{
   padding-bottom: 24px;
 }
 
-#b24_main #row_5 H2{
+#b24_main #row_5,
+#b24_main #row_7{
   text-align: center;
 }
 #b24_main #row_5 .slick-slide .screen{
   position: relative;
 }
-#b24_main #row_5 .slick-slide .screen .name{
+#b24_main #row_5 .screen .name{
   text-align: center;
   text-transform: uppercase;
   font: 11px/18px 'geometria_medium', sans-serif;
 }
-#b24_main #row_5 .slick-slide .screen .company{
+#b24_main #row_5 .screen .company{
   text-align: center;
   color: #6a828c;
   font: 16px/22px 'geometria_light', sans-serif;
 }
-#b24_main #row_5 .slick-slide .screen .text{
+#b24_main #row_5 .screen .text{
   background: #f2f5f7;
   margin-top: 10px;
   position: relative;
+  text-align: left;
   width: 136%;
   margin-left: -18%;
   padding: 13px 15px;
@@ -772,7 +762,7 @@ A.btn{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-#b24_main #row_5 .slick-slide .screen .text:before{
+#b24_main #row_5 .screen .text:before{
   content: '';
   position: absolute;
   bottom: 100%;
@@ -783,6 +773,33 @@ A.btn{
   border-style: solid;
   border-width: 0 8px 8px 8px;
   border-color: transparent transparent #f2f5f7 transparent;
+}
+#b24_main #row_5 .btn.blue_border.arrow,
+#b24_main #row_7 .btn.blue_border.arrow{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#b24_main #row_5 .slider .round_nav,
+#b24_main #row_7 .slider .round_nav{
+  height: 62px;
+}
+
+#b24_main #row_7 .screen{
+  text-align: center;
+  width: 120%;
+  margin-left: -10%;
+}
+#b24_main #row_7 .screen .heading{
+  text-align: center;
+  font: 14px/21px 'geometria_medium', sans-serif;
+  text-transform: uppercase;
+}
+#b24_main #row_7 .screen .date{
+  font: 11px/22px 'geometria_light', sans-serif;
+  color: #6a828c;
+  text-transform: uppercase;
+  position: relative;
+  top: 2px;
 }
 /* /#b24_main rows */
 
@@ -1354,12 +1371,30 @@ TABLE.price TD .ico.disabled{
 
 /* /unique style */
 
+/* star */
+
+.star {
+  line-height: 80px;
+}
+.star_wrap{
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 20px;
+}
+.star BIG{
+  font: 26px/16px 'geometria_regular', sans-serif;
+}
+.star SMALL{
+  font: 10px/16px 'geometria_regular', sans-serif;
+}
+
+/* /star */
 
 
 /*Portrait*/
 @media (max-width:480px) {
 
- #b24_main #row_5 .slick-list{
+ #row_1 .slick-list, #row_5 .slick-list, #row_7 .slick-list{
    width: 64%;
  }
 
