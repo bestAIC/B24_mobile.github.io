@@ -608,6 +608,7 @@ A.btn{
   background: #2dd2f7;
 }
 
+#b24_main #row_7 .round_nav B:before, 
 #b24_main #row_5 .round_nav B:before {
   background: #fff;
 }
@@ -633,7 +634,8 @@ A.btn{
 #b24_main #row_1 .screen {
   width:319px;
   height:225px;
-  margin:0 auto;
+  left:50%;
+  margin-left:-160px;
   text-align: center; 
   position: relative; 
 } 
@@ -659,6 +661,20 @@ A.btn{
 #b24_main #row_2 {
   
 }
+
+#b24_main #row_5 .round_nav SPAN,
+#b24_main #row_7 .round_nav SPAN {
+ opacity:0.5;
+ transition-duration: 0.8s;
+ transition-property: opacity;
+}
+
+#b24_main #row_5 .slick-active .round_nav SPAN,
+#b24_main #row_7 .slick-active .round_nav SPAN {
+ opacity:1;
+}
+
+
 
 #b24_main #row_2 .collage {
   width:307px;
@@ -722,6 +738,61 @@ A.btn{
 
 #b24_main #row_8 {
 
+}
+
+#toggle {
+  position: relative;
+  width: 82%;
+  margin: 0 auto;
+  padding: 5px;
+  height: 30px;
+  background: #0066a1;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+#toggle DIV {
+  position: absolute;
+  height: 30px;
+  width: 50%;
+  background: #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#toggle DIV B {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+#toggle .cloud,
+#toggle .box {
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  width: 50%;
+  color:#1cc9f9;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#drag_cover {
+  position: relative;
+  top:0;
+  left: -100%;
+  width:300%;
+}
+
+#drag_cover TABLE {
+  position: relative;
+  top:0;
+  left: 33.33333%;
+  width:66.66666%;
 }
 
 
