@@ -1,28 +1,11 @@
 // Inits
 $(document).ready(function() {
   SCarousel();
-  PopUp();
   SForm();
   MMenu();
+  STable();
 });
 
-
-// Popup
-function PopUp() {
-  $('.info').on('click', function(){
-    $('#popup').show();
-  }); 
-
-  $('#popup .close').on('click', function(){
-    $('#popup').hide();
-  });
-  
-  $(document).keyup(function(d) {
-    if (d.keyCode == 27) {
-      $('#popup').hide();
-    }
-  });        
-}
 
 // Main menu
 function MMenu() {
@@ -39,12 +22,76 @@ function MMenu() {
   });                                                           
 }
 
+
 // Carousel
 function SCarousel() {
   $('.slider').slick({
     dots:true
   });
 }
+
+
+// Slide Table
+function STable() {
+  $('#toggle div').draggable({
+    stop: function(){
+      var posL = $(this).position().left,
+          widthE = ($('#toggle').width())/4;
+
+      if (posL>widthE) { 
+        $('#toggle span').removeClass('active');
+        $('#toggle .box').addClass('active');   
+        $('#toggle div').animate({left: 'none', right:'5px'}, 200); 
+        $('#drag_cover table').animate({left:'0'}, 200); 
+      } else {
+        $('#toggle span').removeClass('active');
+        $('#toggle .cloud').addClass('active');   
+        $('#toggle div').animate({right:'none', left:'5px'}, 200); 
+        $('#drag_cover table').animate({left: '33.33333%'}, 200);               
+      } 
+    },
+    containment:'#toggle',
+    axis: 'x',
+    scroll:false
+  });
+
+  $('#drag_cover table').draggable({
+    stop: function(){
+
+      var posL = $(this).position().left,
+          widthE = ($('#drag_cover').width())/6;
+      if (posL>widthE) { 
+        $('#toggle span').removeClass('active');
+        $('#toggle .box').addClass('active');   
+        $('#toggle div').animate({left: 'none', right:'5px'}, 200); 
+        $(this).animate({left:'0'}, 200); 
+      } else {
+        $('#toggle span').removeClass('active');
+        $('#toggle .cloud').addClass('active');   
+        $('#toggle div').animate({right:'none', left:'5px'}, 200); 
+        $(this).animate({left: '33.33333%'}, 200);        
+      } 
+
+    },
+    containment:'#drag_cover', 
+    axis: 'x'
+  });  
+
+  $('#toggle span').on('click', function(){
+    $('#toggle span').removeClass('active');
+    $(this).addClass('active');
+
+    if ($('#toggle .box').hasClass('active')) {     
+      $('#toggle div').animate({left: 'none', right:'5px'});
+      $('#drag_cover table').animate({left:'0'});
+    } else { 
+      $('#toggle div').animate({right:'none', left:'5px'});
+      $('#drag_cover table').animate({left: '33.33333%'});           
+    } 
+  }); 
+ 
+}
+
 
 // Styler
 function SForm() {
