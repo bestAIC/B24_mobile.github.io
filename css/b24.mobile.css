@@ -1105,6 +1105,14 @@ UL.add_nav LI A:after{
 
 /* /counter companies */
 
+/* item */
+
+.item_block{
+  
+}
+
+/* /item */
+
 /*Portrait*/
 @media (max-width:480px) {
 
