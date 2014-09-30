@@ -48,5 +48,7 @@ function SCarousel() {
 
 // Styler
 function SForm() {
-    $('select').styler();     
+    $('select').styler({
+      selectSearchLimit: 1000
+    });     
 }
