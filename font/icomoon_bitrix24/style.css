@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon_bitrix24';
-	src:url('fonts/icomoon_bitrix24.eot?it8l4i');
-	src:url('fonts/icomoon_bitrix24.eot?#iefixit8l4i') format('embedded-opentype'),
-		url('fonts/icomoon_bitrix24.woff?it8l4i') format('woff'),
-		url('fonts/icomoon_bitrix24.ttf?it8l4i') format('truetype'),
-		url('fonts/icomoon_bitrix24.svg?it8l4i#icomoon_bitrix24') format('svg');
+	src:url('fonts/icomoon_bitrix24.eot?u5g97y');
+	src:url('fonts/icomoon_bitrix24.eot?#iefixu5g97y') format('embedded-opentype'),
+		url('fonts/icomoon_bitrix24.woff?u5g97y') format('woff'),
+		url('fonts/icomoon_bitrix24.ttf?u5g97y') format('truetype'),
+		url('fonts/icomoon_bitrix24.svg?u5g97y#icomoon_bitrix24') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -37,4 +37,7 @@
 }
 .icon-ico_5:before {
 	content: "\25";
+}
+.icon-ico_6:before {
+	content: "\26";
 }
