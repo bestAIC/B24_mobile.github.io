@@ -1,11 +1,27 @@
 // Inits
 $(document).ready(function() {
   SCarousel();
+  THeader();
   SForm();
   MMenu();
   STable();
 });
 
+
+// Header top
+function THeader() {
+
+  $(window).on('scroll', function(){ 
+
+    var wTop = ($(document).scrollTop())-1;
+    
+    $('#header').css({top: wTop}); 
+
+
+  }); 
+
+ 
+}
 
 // Main menu
 function MMenu() {

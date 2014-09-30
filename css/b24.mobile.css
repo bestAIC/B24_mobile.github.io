@@ -2,7 +2,7 @@
 
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:320px;}
+BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:280px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG, FIELDSET {border:none; outline:none;}
@@ -242,8 +242,8 @@ SPAN.icomoon{
   position: fixed;
   right: 0;
   left: 0;
-  width:82%;
-  min-width: 400px;
+  width:100%;
+  min-width: 280px;
   max-width: 736px;
   height:100%;
   overflow:hidden;
@@ -458,7 +458,7 @@ SPAN.icomoon{
 
 .wrap {
   width:100%;
-  min-width: 400px;
+  min-width: 280px;
   max-width: 736px;
   min-height:100%;
   position:relative;
@@ -468,10 +468,15 @@ SPAN.icomoon{
 
 #header {
   padding:15px 20px;
-  position: relative;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 9;
   min-height: 50px;
   -moz-box-sizing: border-box; 
-  box-sizing: border-box;  
+  box-sizing: border-box; 
+  background: #fff; 
 }
 
 #header .menu_link {
@@ -496,6 +501,8 @@ SPAN.icomoon{
 
 #cover {
   position: relative;
+  margin-top: 50px;
+  overflow: hidden;
 }
 
 .content LI {
@@ -786,6 +793,7 @@ SPAN.icomoon{
   color:#fff;
   padding: 42px 30px 35px;
   text-align: center;
+  position: relative;
 }
 
 #footer .nav{
@@ -1108,8 +1116,6 @@ UL.add_nav LI A:after{
 /*Portrait*/
 @media (max-width:480px) {
 
-  .wrap {
-    min-width: 280px;
-  }  
+ 
 
 }  
