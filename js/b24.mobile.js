@@ -14,13 +14,12 @@ function THeader() {
   $(window).on('scroll', function(){ 
 
     var wTop = ($(document).scrollTop())-1,
-        tTop = ($('#b24_price #row_2').offset().top)-215,
-        tTop2 = ($('#b24_price #row_2').offset().top)-315;
+        tTop = ($('#b24_price #row_2').offset().top)-130;
 
     $('#header').css({top: wTop});
 
-    if (wTop-200>tTop2){ 
-      $('#drag_cover .fixed').css({top: wTop-220});
+    if (wTop-80>tTop){ 
+      $('#drag_cover .fixed').css({top: wTop-231});
     } else {
       $('#drag_cover .fixed').css({top: 'auto'});
     }
