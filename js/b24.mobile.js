@@ -14,11 +14,16 @@ function THeader() {
   $(window).on('scroll', function(){ 
 
     var wTop = ($(document).scrollTop())-1,
-        tTop = ($('#b24_price #row_2').offset().top)-115;
+        tTop = ($('#b24_price #row_2').offset().top)-215,
+        tTop2 = ($('#b24_price #row_2').offset().top)-315;
 
     $('#header').css({top: wTop});
 
-    $('#drag_cover .fixed').css({top: wTop});
+    if (wTop-200>tTop2){ 
+      $('#drag_cover .fixed').css({top: wTop-220});
+    } else {
+      $('#drag_cover .fixed').css({top: 'auto'});
+    }
 
 
     if (wTop>tTop){ 
@@ -102,6 +107,11 @@ function STable() {
         $('#drag_cover .centred DIV').animate({left:center},200);         
       }
     },
+    drag: function(){
+      var center = $('#drag_cover table').position().left;
+      $('#drag_cover .centred DIV').css({left:posL});
+    }, 
+
     containment:'#drag_cover', 
     axis: 'x'
   });  
