@@ -6,12 +6,13 @@
 
 <link rel="stylesheet" type="text/css" href="css/b24.mobile.css" media="all">
 <script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery-custom-ui.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript" src="js/lib/jquery.formstyler.js"></script>
 <script type="text/javascript" src="js/lib/slick.min.js"></script>
 <script type="text/javascript" src="js/b24.mobile.js"></script>
 </head>
-<body id="b24_apps">
+<body id="b24_apps_open">
   <div id="menu">
     <div class="menu_cover">
       <ul>
@@ -37,8 +38,8 @@
 
   <div class="wrap">
     <div id="header">
-      <b class="menu_link"></b>
-      <div class="logo"><img src="img/logo.png" alt="" /></div>
+      <b class="menu_link closed"></b>
+      <div class="logo"><a href="#0"><img src="img/logo.png" alt="" /></a></div>
     </div>
 
     <ul class="content">
@@ -57,39 +58,44 @@
               <option value="install">Установка</option>
             </select>
           </form>
-        </div>
+        </div><!-- limiter -->
       </li>
       <li id="row_2">
-        <div class="item">
-          <div class="left">
-            <i class="icon" style="background-image: url();"></i>
+        <div class="limiter">
+          <div class="item_block">
+            <div class="left">
+              <i class="icon"><img src="pic/pic_04.jpg" alt="" /></i>
+            </div>
+            <ul class="right data">
+              <li><strong>Обновлено</strong>: 12.09.2014</li>
+              <li><strong>Опубликовано</strong>: 30.08.2013</li>
+              <li><strong>Установок</strong>: 6515</li>
+              <li><strong>Версия</strong>: 5</li>
+            </ul>  
           </div>
-          <ul class="right data">
-    				<li><strong>Обновлено</strong>: 12.09.2014</li>
-    				<li><strong>Опубликовано</strong>: 30.08.2013</li>
-    				<li><strong>Установок</strong>: 6515</li>
-    				<li><strong>Версия</strong>: 5</li>
-    			</ul>  
+          
+          <p>Интеграция системы почтовой рассылки MailChimp в Битрикс24.</p>
+          <p>Решение позволяет не выходя с Битрикс24 управлять списками 
+          адресатов портала, делать по ним рассылки, смотреть краткую статистику 
+          кампаний, следить за их успешностью.</p>
+          <p>Пожелания и замечания пишите по адресу: support@artdepo.com.ua</p>
+        </div><!-- limiter -->
+        
+        <i class="screenshot"><img src="pic/pic_07.jpg" alt="" /><hr class="rainbow"/></i>
+        
+        <div class="limiter btn_block">
+          <a href="#" class="btn green">Установить бесплатно</a>
+          <p>или</p>
+          <a href="#" class="btn blue_border">Вернутся к списку</a>
         </div>
         
-        <p>Интеграция системы почтовой рассылки MailChimp в Битрикс24.</p>
-        <p>Решение позволяет не выходя с Битрикс24 управлять списками 
-        адресатов портала, делать по ним рассылки, смотреть краткую статистику 
-        кампаний, следить за их успешностью.</p>
-        <p>Пожелания и замечания пишите по адресу: support@artdepo.com.ua</p>
-        
-        <i class="screenshot"><img src="pic/pic_04.jpg" alt="" /></i>
-        <hr class="rainbow"/>
-        
-        <a href="#" class="btn">Установить бесплатно</a>
-        <p>или</p>
-        <a href="#" class="btn">Вернутся к списку</a>
-        
-        <ul class="add_nav">
-          <li><a href="#">Версии</a></li>
-          <li><a href="#">Поддержка</a></li>
-          <li><a href="#">Установка</a></li>
-        </ul>        
+        <div class="limiter">
+          <ul class="add_nav">
+            <li><a href="#">Версии</a></li>
+            <li><a href="#">Поддержка</a></li>
+            <li><a href="#">Установка</a></li>
+          </ul>
+        </div>
       </li>      
       <li id="row_3" class="bg_c_2 counter-wrap">
         <div class="limiter">

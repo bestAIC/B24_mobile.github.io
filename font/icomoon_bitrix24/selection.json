@@ -25,7 +25,7 @@
 			],
 			"properties": {
 				"order": 6,
-				"id": 4,
+				"id": 5,
 				"prevSize": 32,
 				"code": 33,
 				"name": "ico_1",
@@ -58,7 +58,7 @@
 			],
 			"properties": {
 				"order": 7,
-				"id": 3,
+				"id": 4,
 				"prevSize": 32,
 				"code": 34,
 				"name": "ico_2",
@@ -91,7 +91,7 @@
 			],
 			"properties": {
 				"order": 8,
-				"id": 2,
+				"id": 3,
 				"prevSize": 32,
 				"code": 35,
 				"name": "ico_3",
@@ -124,7 +124,7 @@
 			],
 			"properties": {
 				"order": 9,
-				"id": 1,
+				"id": 2,
 				"prevSize": 32,
 				"code": 36,
 				"name": "ico_4",
@@ -157,7 +157,7 @@
 			],
 			"properties": {
 				"order": 10,
-				"id": 0,
+				"id": 1,
 				"prevSize": 32,
 				"code": 37,
 				"name": "ico_5",
@@ -165,6 +165,39 @@
 			},
 			"setIdx": 0,
 			"iconIdx": 4
+		},
+		{
+			"icon": {
+				"paths": [
+					"M253.952 1020.928l516.096-508.928-516.096-508.928z"
+				],
+				"attrs": [
+					{
+						"opacity": 1,
+						"visibility": false
+					}
+				],
+				"grid": 0,
+				"tags": [
+					"ico_6"
+				]
+			},
+			"attrs": [
+				{
+					"opacity": 1,
+					"visibility": false
+				}
+			],
+			"properties": {
+				"order": 11,
+				"id": 0,
+				"prevSize": 32,
+				"code": 38,
+				"name": "ico_6",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 5
 		}
 	],
 	"height": 1024,
