@@ -43,11 +43,13 @@ function MMenu() {
     if ($(this).hasClass('closed')) {     
       $(this).addClass('opened').removeClass('closed');  
       $('#header, #cover, #footer').animate({left:'66%'});
-      $('.menu_cover').animate({left:0});       
+      $('.menu_cover').animate({left:0});
+      $('#menu').css({'z-index':'2'});       
     } else { 
       $(this).addClass('closed').removeClass('opened');
       $('#header, #cover, #footer').animate({left:0});
-      $('.menu_cover').animate({left:'-66%'});       
+      $('.menu_cover').animate({left:'-66%'});
+      $('#menu').css({'z-index':'auto'});       
     } 
   });                                                           
 }
