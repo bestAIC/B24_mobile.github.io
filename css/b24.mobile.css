@@ -314,15 +314,14 @@ SPAN.icomoon{
 }
 
 #menu .lang B.selected:after {
-  content: '';
+  content: '#';
+  font: 15px 'icomoon_bitrix24';
   width: 15px;
   height: 9px;
   position: absolute;
   top: 0;
   right: 0;
   display: inline-block;
-  background: url('../img/arrow_top.png') 0 0 no-repeat; 
-  background-size: cover;
 }
 
 A.btn{
@@ -388,6 +387,16 @@ A.btn{
 .btn.blue_border:active {
   border: 2px solid #77e0ff;
   color: #77e0ff;
+}
+.btn.blue_border.arrow:after{
+  content: '"';
+  font-size: 14px;
+  font-family: 'icomoon_bitrix24';
+  display: inline-block;
+  right: 14px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
 }
 
 .rainbow {
@@ -508,10 +517,50 @@ A.btn{
   top: 16px;
   left: 18px;
   display: inline-block;
-  width:21px;
-  height:19px;
-  background: url('../img/ico_menu.png') 0 0 no-repeat; 
-  background-size: cover;    
+  width: 22px;
+  height: 18px;
+  cursor: pointer;
+}
+.menu_link:before, 
+.menu_link:after, 
+.menu_link span{
+  content: '';
+  background: #0066a1;
+  display: block;
+  width: 21px;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  transition: none 0.5s ease 0.5s;  
+  transition-property: transform, top, bottom, left, opacity;
+}
+.menu_link span{
+  top: 50%;
+  margin-top: 0;
+}
+.menu_link:before{
+  top: 1px;
+}
+.menu_link:after{
+  bottom: -2px;
+}
+.menu_link:before,
+.menu_link:after,
+.menu_link span{
+  transition: none 0.5s ease;
+  transition-property: transform, top, bottom, left, opacity;
+}
+.menu_link.opened span{
+  left: -50px;
+  opacity: 0;
+}
+.menu_link.opened:before{
+  transform: rotate( 45deg );
+  top: 7px;
+}
+.menu_link.opened:after{
+  transform: rotate( -45deg );
+  bottom: 8px;
 }
 
 #header .logo {
@@ -1206,6 +1255,7 @@ UL.add_nav LI A:after{
 /* counter companies */
 .counter-wrap{
   padding-top: 34px;
+  padding-bottom: 36px;
   text-align: center;
 }
 .counter{
@@ -1214,7 +1264,7 @@ UL.add_nav LI A:after{
   border-radius: 4px;
   padding: 18px 15px;
   position: relative;
-  min-width: 280px;
+  max-width: 320px;
   box-sizing: border-box;
   margin: 0 auto 14px;
 }
@@ -1236,7 +1286,28 @@ UL.add_nav LI A:after{
 }
 .counter-wrap .btn{
   margin-top: 20px;
-  margin-bottom: 36px;
+}
+
+.counter.calendar .number:before{
+  content: '';
+  background: url('../img/ico_4.png') 0 / cover no-repeat;
+  display: inline-block;
+  width: 28px;
+  height: 26px;
+  position: absolute;
+  left: 48px;
+  top: 20px;
+}
+.counter.calendar .number SUP{
+  font: 15px/21px 'geometria_regular', sans-serif;
+  display: inline-block;
+  position: relative;
+  top: -12px;
+}
+.counter-wrap .name{
+  color: #2fc7f7;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 /* /counter companies */
@@ -1295,7 +1366,7 @@ TABLE.price TD SMALL{
   display: block;
   margin: 0 auto;
 }
-TABLE.price TD[colspan="3"]{
+TABLE.price TD[colspan]{
   color: #5b6366;
   font-size: 14px;
   line-height: 19px;
