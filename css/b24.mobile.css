@@ -1377,7 +1377,8 @@ TABLE.price TD SMALL{
   display: block;
   margin: 0 auto;
 }
-TABLE.price TD[colspan]{
+TABLE.price TD[colspan],
+TABLE.price TH[colspan]{
   color: #5b6366;
   font-size: 14px;
   line-height: 19px;

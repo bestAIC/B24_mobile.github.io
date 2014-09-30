@@ -1,7 +1,9 @@
 // Inits
 $(document).ready(function() {
   SCarousel();
-  THeader();
+  if($('#b24_price').length){
+    THeader();
+  }
   SForm();
   MMenu();
   STable();
