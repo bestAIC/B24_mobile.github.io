@@ -265,6 +265,7 @@ SPAN.icomoon{
 
 #menu UL LI {
   border-top:1px solid #6b757b;
+  cursor: pointer;
 }
 
 #menu LI A {
