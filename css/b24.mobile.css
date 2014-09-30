@@ -795,7 +795,43 @@ A.btn{
   width:66.66666%;
 }
 
+#toggle_cover {
+  width: 100%;
+  position: absolute;
+  background: #2dd2f7;
+  padding:10px 0;
+  z-index: 99;
+}
 
+#b24_price #row_1 {
+  padding:0 0 65px 0;
+}
+
+
+#drag_cover .fixed {
+  position: absolute;
+  background: #fff; 
+  width: 100%; 
+}
+
+#drag_cover .fixed TR {
+  display: block;
+  width: 100%; 
+  overflow: hidden; 
+}
+
+#drag_cover .fixed TH,
+#drag_cover .fixed TD {
+  display: block;
+  float: left; 
+}
+
+#drag_cover .centred DIV {
+  position: relative;
+  left:0;
+  text-align: center;
+  width: 50%;
+}
 
 #footer {
   background: #46535a;
