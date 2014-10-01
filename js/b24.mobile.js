@@ -77,10 +77,11 @@ function STable() {
   $('#toggle .toggle_limiter div').draggable({
     stop: function(){
       var posL = $(this).position().left,
-          widthE = ($('#toggle').width())/4,
+          widthC = $('#toggle .toggle_limiter').width(),
+          widthE = $('#toggle .toggle_limiter div').width(),
           center = $('#drag_cover table').position().left;
 
-      if (posL>widthE) { 
+      if (posL>widthC/4) { 
         $('#toggle span').removeClass('active');
         $('#toggle .box').addClass('active');   
         $('#toggle .toggle_limiter div').animate({left: '50%'}, 200); 
@@ -93,6 +94,7 @@ function STable() {
         $('#drag_cover table').animate({left: '33.33333%'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200);              
       } 
+
     },    
     containment:'#toggle',
     axis: 'x',
