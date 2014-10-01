@@ -360,6 +360,7 @@ A.btn{
 .btn.green {
   font-size: 13px;
   color: #fff;
+  outline: none;
   min-width: 153px; 
   background-color: #2fc6f7; 
   -webkit-box-shadow: 0 0 25px rgba(255,255,255,.5); 
@@ -437,7 +438,7 @@ A.btn{
 .slick-loading .slick-track { visibility: hidden; }
 
 .slick-slide { float: left; height: 100%; min-height: 1px; display: none; }
-.slick-slide img { width: 100%; height:  auto; }
+.slick-slide img { width: 50%; height:  auto; }
 .slick-slide.slick-loading img { display: none; }
 .slick-slide.dragging img { pointer-events: none; }
 .slick-initialized .slick-slide { display: block; }
@@ -488,6 +489,7 @@ A.btn{
   content: '';
   display: none;
 }
+
 /**/  
 
 .wrap {
@@ -739,6 +741,7 @@ A.btn{
   left: 0px; 
   right: 0px; 
   margin: 0px auto;
+  width: 153px;
 } 
 
 #b24_main #row_1 .n1 .screen {
@@ -771,6 +774,7 @@ A.btn{
   text-align: center; 
   position: relative;     
 }
+
 #b24_main #row_2 .slick-slide {
   position: relative;
   padding: 0 0 105px 0;
@@ -1076,6 +1080,7 @@ A.btn{
 }
 #footer .mobile_ico A .ico IMG{
   vertical-align: middle;
+  width: 23px;
 }
 #footer .mobile_ico A .sub_title{
   font-size: 14px;
@@ -1336,7 +1341,7 @@ UL.add_nav LI A:after{
   width: 28px;
   height: 26px;
   position: absolute;
-  left: 48px;
+  left: 36px;
   top: 20px;
 }
 .counter.calendar .number SUP{
@@ -1348,7 +1353,10 @@ UL.add_nav LI A:after{
 .counter-wrap .name{
   color: #2fc7f7;
   margin: 0 auto;
-  max-width: 320px;
+  display: block;
+  text-decoration: none;
+  max-width: 280px;
+  font: 14px 'geometria_light', sans-serif;
 }
 
 /* /counter companies */
@@ -1382,10 +1390,14 @@ UL.add_nav LI A:after{
 TABLE.price{
   margin-top: 14px;
   width: 100%;
+  border-top: 2px solid #d0d6d9;
   border-bottom: 2px solid #d0d6d9;
 }
 TABLE.price tr:nth-child(odd){
-  border-top: 2px solid #d0d6d9;
+  border-top: 1px solid #d0d6d9;
+}
+TABLE.price tr:first-child{
+  border-top: none;
 }
 TABLE.price TH,
 TABLE.price TD{
@@ -1492,7 +1504,7 @@ TABLE.price TD .ico.disabled{
 .star_wrap{
   vertical-align: middle;
   display: inline-block;
-  line-height: 20px;
+  line-height: 0;
 }
 .star BIG{
   font: 26px/16px 'geometria_regular', sans-serif;
@@ -1509,6 +1521,10 @@ TABLE.price TD .ico.disabled{
 
  #row_1 .slick-list, #row_5 .slick-list, #row_7 .slick-list{
    width: 64%;
+ }
+
+ .slick-slide img{
+  width: 100%;
  }
 
 }  
