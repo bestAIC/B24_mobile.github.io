@@ -592,7 +592,7 @@ A.btn{
   -webkit-transform: rotate( -45deg );
   -moz-transform: rotate( -45deg );
   -o-transform: rotate( -45deg );
-  bottom: 8px;
+  bottom: 7px;
 }
 
 #header .logo {
@@ -698,6 +698,8 @@ A.btn{
   -moz-box-sizing: border-box; 
   box-sizing: border-box;    
   color: #0066a1;
+  font-size: 11px;
+  line-height: 13px;
   background-position: 50% 50%;
   background-repeat: no-repeat; 
   background-size: cover;
@@ -733,7 +735,6 @@ A.btn{
   margin-left:-160px;
   text-align: center; 
   position: relative; 
-  overflow: hidden;
 } 
 
 #b24_main #row_1 .screen .btn {
@@ -743,21 +744,65 @@ A.btn{
   right: 0px; 
   margin: 0px auto;
   width: 153px;
+  z-index: 1;
 } 
 
+#b24_main #row_1 .screen H4{
+  font: 16px/23px 'geometria_regular', sans-serif;
+  color: #000;
+  margin-bottom: 10px;
+}
+#b24_main #row_1 .screen P{
+  font: 13px/18px 'geometria_regular', sans-serif;
+}
 #b24_main #row_1 .screen IMG{
   width: 100%;
   position: relative;
   margin: 0 auto;
 }
+#b24_main #row_1 .slick-active .screen H4{
+  color: #fff;
+  margin-top: -44px;
+}
+#b24_main #row_1 .slick-slide .round_nav SPAN{
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: cover;
+}
+#b24_main #row_1 .n1.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_1.png');}
+#b24_main #row_1 .n1.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_1_a.png');}
+#b24_main #row_1 .n2.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_2.png');}
+#b24_main #row_1 .n2.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_2_a.png');}
+#b24_main #row_1 .n3.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_3.png');}
+#b24_main #row_1 .n3.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_3_a.png');}
+#b24_main #row_1 .n4.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_4.png');}
+#b24_main #row_1 .n4.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_4_a.png');}
+#b24_main #row_1 .n5.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_5.png');}
+#b24_main #row_1 .n5.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_5_a.png');}
+#b24_main #row_1 .n6.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_6.png');}
+#b24_main #row_1 .n6.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_6_a.png');}
+#b24_main #row_1 .n7.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_7.png');}
+#b24_main #row_1 .n7.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_7_a.png');}
+#b24_main #row_1 .n8.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_8.png');}
+#b24_main #row_1 .n8.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_8_a.png');}
+#b24_main #row_1 .n9.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_9.png');}
+#b24_main #row_1 .n9.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_9_a.png');}
+#b24_main #row_1 .n10.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_10.png');}
+#b24_main #row_1 .n10.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_10_a.png');}
+#b24_main #row_1 .n11.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_11.png');}
+#b24_main #row_1 .n11.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_11_a.png');}
+#b24_main #row_1 .n12.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_12.png');}
+#b24_main #row_1 .n12.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_12_a.png');}
+#b24_main #row_1 .n13.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_13.png');}
+#b24_main #row_1 .n13.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_13_a.png');}
 #b24_main #row_1 .n1 .screen IMG{
   width: 90%;
+  top: 47px;
+}
+#b24_main #row_1 .n2 .screen IMG{
   top: 14px;
 }
-  #b24_main #row_1 .n1 .screen H4{
-    font: 16px/23px 'geometria_medium', sans-serif; 
-  }
-#b24_main #row_1 .n2 .screen IMG{
+#b24_main #row_1 .n3 .screen IMG{
   top: 18px;
 }
 
@@ -859,6 +904,7 @@ A.btn{
   margin-left: -18%;
   padding: 13px 15px;
   border-radius: 4px;
+  z-index: 100;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
