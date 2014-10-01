@@ -532,8 +532,14 @@ A.btn{
   height: 3px;
   position: absolute;
   left: 0px;
-  transition: none 0.5s ease 0.5s;  
+  transition: none 0.5s ease;
+  -webkit-transition: none 0.5s ease;
+  -o-transition: none 0.5s ease;
+  transition: none 0.5s ease;
   transition-property: transform, top, bottom, left, opacity;
+  -webkit-transition-property: transform, top, bottom, left, opacity;
+  -moz-transition-property: transform, top, bottom, left, opacity;
+  -o-transition-property: transform, top, bottom, left, opacity;
 }
 .menu_link span{
   top: 50%;
@@ -549,19 +555,38 @@ A.btn{
 .menu_link:after,
 .menu_link span{
   transition: none 0.5s ease;
+  -webkit-transition: none 0.5s ease;
+  -o-transition: none 0.5s ease;
+  transition: none 0.5s ease;
   transition-property: transform, top, bottom, left, opacity;
+  -webkit-transition-property: transform, top, bottom, left, opacity;
+  -moz-transition-property: transform, top, bottom, left, opacity;
+  -o-transition-property: transform, top, bottom, left, opacity;
 }
 .menu_link.opened span{
   left: -50px;
   opacity: 0;
 }
 .menu_link.opened:before{
+  -webkit-transform: rotate( 45deg );
+  -ms-transform: rotate( 45deg );
+  -o-transform: rotate( 45deg );
   transform: rotate( 45deg );
   top: 7px;
 }
 .menu_link.opened:after{
   transform: rotate( -45deg );
+  -webkit-transform: rotate( -45deg );
+  -moz-transform: rotate( -45deg );
+  -o-transform: rotate( -45deg );
   bottom: 8px;
+}
+
+.csstransitions .menu_link.opened:before{
+  top: 0;
+}
+.csstransitions .menu_link.opened:after{
+  bottom: 0;
 }
 
 #header .logo {
