@@ -246,7 +246,7 @@ SPAN.icomoon{
   min-width: 280px;
   max-width: 736px;
   height:100%;
-  overflow:hidden;
+  overflow:auto;
   margin: 0 auto;
 }
 
@@ -257,7 +257,7 @@ SPAN.icomoon{
   left: -66%;
   min-height: 100%;
   background-color:#46535a;
-  padding:0px 25px;  
+  padding:0px 25px 60px 25px;  
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 
@@ -502,9 +502,20 @@ A.btn{
 
 #header {
   width: 100%;
-  position: absolute;
+  position: relative;
+  margin-left: 0;
   top:0;
-  left: 0;
+  z-index: 9;
+  min-height: 50px;
+  background: #fff; 
+}
+
+#header .header_cover {
+  width: 100%;
+  position: fixed;
+  max-width: 736px;
+  margin-left: 0;
+  top:0;
   z-index: 9;
   min-height: 50px;
   -moz-box-sizing: border-box; 
@@ -597,7 +608,6 @@ A.btn{
 
 #cover {
   position: relative;
-  margin-top: 50px;
   overflow: hidden;
   min-width: 320px;
 }
@@ -939,6 +949,7 @@ A.btn{
 
 #toggle_cover {
   width: 100%;
+  max-width: 736px;
   position: absolute;
   background: #2dd2f7;
   padding:10px 0;

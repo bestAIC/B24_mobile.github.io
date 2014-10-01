@@ -16,7 +16,7 @@ function THeader() {
     var wTop = ($(document).scrollTop())-1,
         tTop = ($('#row_2').offset().top)-130;
 
-    $('#header').css({top: wTop});
+    //$('#header').css({top: wTop});
 
     if (wTop-80>tTop){ 
       $('#drag_cover .fixed').css({top: wTop-231});
@@ -26,9 +26,15 @@ function THeader() {
 
 
     if (wTop>tTop){ 
-      $('#toggle_cover').css({top: wTop});
+      $('#toggle_cover').css({
+        top: '48px',
+        position: 'fixed'
+      });
     } else {
-      $('#toggle_cover').css({top: 'auto'});
+      $('#toggle_cover').css({
+        top: 'auto',
+        position: 'absolute'  
+      });
     }
   }); 
 
@@ -38,16 +44,19 @@ function THeader() {
 // Main menu
 function MMenu() {
   $('#header .menu_link').on('click', function(){ 
+    var l66 = $('#menu .menu_cover').width();
     if ($(this).hasClass('closed')) {     
       $(this).addClass('opened').removeClass('closed');  
       $('#header, #cover, #footer').animate({left:'66%'});
+      $('#header .header_cover, #toggle_cover').animate({'margin-left':'0.1'});
       $('.menu_cover').animate({left:0});
-      $('#menu').css({'z-index':'2'});       
+      $('#menu').css({'z-index':'2'});
     } else { 
       $(this).addClass('closed').removeClass('opened');
       $('#header, #cover, #footer').animate({left:0});
+      $('#header .header_cover, #toggle_cover').animate({'margin-left':'0'});
       $('.menu_cover').animate({left:'-66%'});
-      $('#menu').css({'z-index':'auto'});       
+      $('#menu').css({'z-index':'auto'}); 
     } 
   });                                                           
 }
