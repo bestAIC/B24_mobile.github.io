@@ -2,7 +2,7 @@
 
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:280px;}
+BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:320px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG, FIELDSET {border:none; outline:none;}
@@ -532,8 +532,14 @@ A.btn{
   height: 3px;
   position: absolute;
   left: 0px;
-  transition: none 0.5s ease 0.5s;  
+  transition: none 0.5s ease;
+  -webkit-transition: none 0.5s ease;
+  -o-transition: none 0.5s ease;
+  transition: none 0.5s ease;
   transition-property: transform, top, bottom, left, opacity;
+  -webkit-transition-property: transform, top, bottom, left, opacity;
+  -moz-transition-property: transform, top, bottom, left, opacity;
+  -o-transition-property: transform, top, bottom, left, opacity;
 }
 .menu_link span{
   top: 50%;
@@ -549,18 +555,30 @@ A.btn{
 .menu_link:after,
 .menu_link span{
   transition: none 0.5s ease;
+  -webkit-transition: none 0.5s ease;
+  -o-transition: none 0.5s ease;
+  transition: none 0.5s ease;
   transition-property: transform, top, bottom, left, opacity;
+  -webkit-transition-property: transform, top, bottom, left, opacity;
+  -moz-transition-property: transform, top, bottom, left, opacity;
+  -o-transition-property: transform, top, bottom, left, opacity;
 }
 .menu_link.opened span{
   left: -50px;
   opacity: 0;
 }
 .menu_link.opened:before{
+  -webkit-transform: rotate( 45deg );
+  -ms-transform: rotate( 45deg );
+  -o-transform: rotate( 45deg );
   transform: rotate( 45deg );
   top: 7px;
 }
 .menu_link.opened:after{
   transform: rotate( -45deg );
+  -webkit-transform: rotate( -45deg );
+  -moz-transform: rotate( -45deg );
+  -o-transform: rotate( -45deg );
   bottom: 8px;
 }
 
