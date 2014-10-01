@@ -89,7 +89,7 @@ function STable() {
     axis: 'x',
     scroll:false
   });
-
+/*
   $('#drag_cover table').draggable({
     stop: function(){
 
@@ -118,7 +118,7 @@ function STable() {
     containment:'#drag_cover', 
     axis: 'x'
   });  
-
+*/
   $('#toggle span').on('click', function(){
     $('#toggle span').removeClass('active');
     $(this).addClass('active');
