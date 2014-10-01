@@ -159,17 +159,17 @@ function SForm() {
 
 // Input inpSearch
 function InpSearch(){
-  var that = $('input[placeholder]');
+  var that = $('input[value]');
   
   that.each(function(){
     var val = $(this);
       $(this).focus(function() {
-        if ( this.placeholder == "Что ищем?" ) {
-          this.placeholder = "";
+        if ( this.value == "Что ищем?" ) {
+          this.value = "";
         }
       }).blur(function() {
-         if ( this.placeholder == "" ) {
-           this.placeholder = "Что ищем?";
+         if ( this.value == "" ) {
+           this.value = "Что ищем?";
          } 
       });
   })
