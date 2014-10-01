@@ -2,7 +2,7 @@
 
 * {margin:0; padding:0;}
 HTML {height:100%;}
-BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:280px;}
+BODY {height:100%; background:#fff; color:#000; font:100% "Helvetica Neue",Arial,"Helvetica CY","Nimbus Sans L",sans-serif; min-width:320px;}
 TABLE {border-spacing:0; border-collapse:collapse;}
 TD,TH {vertical-align:top; text-align:left;}
 IMG, FIELDSET {border:none; outline:none;}
