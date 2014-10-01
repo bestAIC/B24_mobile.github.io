@@ -72,7 +72,7 @@ function SCarousel() {
 
 // Slide Table
 function STable() {
-  $('#toggle div').draggable({
+  $('#toggle .toggle_limiter div').draggable({
     stop: function(){
       var posL = $(this).position().left,
           widthE = ($('#toggle').width())/4,
@@ -81,13 +81,13 @@ function STable() {
       if (posL>widthE) { 
         $('#toggle span').removeClass('active');
         $('#toggle .box').addClass('active');   
-        $('#toggle div').animate({left: 'none', right:'5px'}, 200); 
+        $('#toggle .toggle_limiter div').animate({left: '50%'}, 200); 
         $('#drag_cover table').animate({left:'0'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200);
       } else {
         $('#toggle span').removeClass('active');
         $('#toggle .cloud').addClass('active');   
-        $('#toggle div').animate({right:'none', left:'5px'}, 200); 
+        $('#toggle .toggle_limiter div').animate({left:'0'}, 200); 
         $('#drag_cover table').animate({left: '33.33333%'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200);              
       } 
@@ -131,10 +131,10 @@ function STable() {
     $(this).addClass('active');
 
     if ($('#toggle .box').hasClass('active')) {     
-      $('#toggle div').animate({left: 'none', right:'5px'});
+      $('#toggle .toggle_limiter div').animate({left: '50%'});
       $('#drag_cover table').animate({left:'0'});
     } else { 
-      $('#toggle div').animate({right:'none', left:'5px'});
+      $('#toggle .toggle_limiter div').animate({left:'0'});
       $('#drag_cover table').animate({left: '33.33333%'});           
     } 
 

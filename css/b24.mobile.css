@@ -903,7 +903,11 @@ A.btn{
   border-radius: 20px;
 }
 
-#toggle DIV {
+#toggle .toggle_limiter {
+  position: relative;
+}
+
+#toggle .toggle_limiter DIV {
   position: absolute;
   height: 30px;
   width: 50%;
