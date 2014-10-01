@@ -541,36 +541,28 @@ A.btn{
   content: '';
   background: #0066a1;
   display: block;
-  width: 21px;
-  height: 3px;
+  width: 22px;
+  height: 4px;
   position: absolute;
   left: 0px;
-  transition: none 0.5s ease;
-  -webkit-transition: none 0.5s ease;
-  -o-transition: none 0.5s ease;
-  transition: none 0.5s ease;
-  transition-property: transform, top, bottom, left, opacity;
-  -webkit-transition-property: transform, top, bottom, left, opacity;
-  -moz-transition-property: transform, top, bottom, left, opacity;
-  -o-transition-property: transform, top, bottom, left, opacity;
 }
 .menu_link span{
   top: 50%;
-  margin-top: 0;
+  margin-top: -2px;
 }
 .menu_link:before{
-  top: 1px;
+  top: -1px;
 }
 .menu_link:after{
-  bottom: -2px;
+  bottom: -1px;
 }
 .menu_link:before,
 .menu_link:after,
 .menu_link span{
-  transition: none 0.5s ease;
-  -webkit-transition: none 0.5s ease;
-  -o-transition: none 0.5s ease;
-  transition: none 0.5s ease;
+  transition: none 0.5s ease .15s;
+  -webkit-transition: none 0.5s ease .15s;
+  -o-transition: none 0.5s ease .15s;
+  transition: none 0.5s ease .15s;
   transition-property: transform, top, bottom, left, opacity;
   -webkit-transition-property: transform, top, bottom, left, opacity;
   -moz-transition-property: transform, top, bottom, left, opacity;
@@ -724,19 +716,19 @@ A.btn{
 #b24_main #row_5 .round_nav B:before {
   background: #fff;
 }
-
+#b24_main #row_1 .slider .round_nav{
+  margin-bottom: -30px;
+}
 #b24_main #row_1 .round_nav SPAN {
   padding-top: 100px;    
 }
 #b24_main #row_1 .screen {
-  width:320px;
-  height:225px;
+  width:480px;
   left:50%;
-  margin-left:-160px;
+  margin-left:-240px;
   text-align: center; 
   position: relative; 
-} 
-
+}
 #b24_main #row_1 .screen .btn {
   position: absolute;
   bottom: 40px; 
@@ -746,28 +738,44 @@ A.btn{
   width: 153px;
   z-index: 1;
 } 
-
+#b24_main #row_1 .screen{
+  text-align: center;
+  transition-duration: 0s;
+  z-index: 1;
+}
+#b24_main #row_1 .screen IMG{
+  opacity: 0;
+  width: 480px;
+  vertical-align: bottom;
+  transition-delay: 0.25s;
+  transition-duration: 0.8s;
+}
+#b24_main #row_1 .slick-active .screen IMG{
+  opacity: 1;
+}
+#b24_main #row_1 .screen_text{
+  height: 100px;
+  width: 70%;
+  margin: 0 auto;
+}
 #b24_main #row_1 .screen H4{
-  font: 16px/23px 'geometria_regular', sans-serif;
   color: #000;
   margin-bottom: 10px;
 }
 #b24_main #row_1 .screen P{
-  font: 13px/18px 'geometria_regular', sans-serif;
-}
-#b24_main #row_1 .screen IMG{
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-}
-#b24_main #row_1 .slick-active .screen H4{
+  font: 16px/23px 'geometria_regular', sans-serif;
   color: #fff;
-  margin-top: -44px;
+}
+#b24_main #row_1 .screen H4 + P{
+  font: 14px/18px 'geometria_light', sans-serif;
 }
 #b24_main #row_1 .slick-slide .round_nav SPAN{
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: cover;
+}
+#b24_main #row_1 .slick-active.slick-slide .round_nav SPAN{
+  text-indent: -9999px;
 }
 #b24_main #row_1 .n1.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_1.png');}
 #b24_main #row_1 .n1.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_1_a.png');}
@@ -795,16 +803,6 @@ A.btn{
 #b24_main #row_1 .n12.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_12_a.png');}
 #b24_main #row_1 .n13.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_13.png');}
 #b24_main #row_1 .n13.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_13_a.png');}
-#b24_main #row_1 .n1 .screen IMG{
-  width: 90%;
-  top: 47px;
-}
-#b24_main #row_1 .n2 .screen IMG{
-  top: 14px;
-}
-#b24_main #row_1 .n3 .screen IMG{
-  top: 18px;
-}
 
 #b24_main #row_5 .round_nav SPAN,
 #b24_main #row_7 .round_nav SPAN {
@@ -823,7 +821,7 @@ A.btn{
   padding-top: 0;
 }
 #b24_main #row_2 .collage {
-  margin:10px auto 0;
+  margin:20px auto 0;
   text-align: center; 
   position: relative;     
 }
@@ -858,7 +856,7 @@ A.btn{
 }
 #b24_main #row_3 .load_video IMG {
   width: 100%;
-  height: auto; 
+  height: auto;
 }
 #b24_main #row_3 .video_play-pic{
   top: 70%;
@@ -928,6 +926,7 @@ A.btn{
 #b24_main #row_5 .slider .round_nav,
 #b24_main #row_7 .slider .round_nav{
   height: 62px;
+  border-top: 2px solid #c0eefd;
 }
 
 #b24_main #row_7 .screen{
@@ -1525,6 +1524,7 @@ TABLE.price TD .ico.active{
 }
 TABLE.price TD .ico.disabled{
   background-color: #b0b8bb;
+  line-height: 21px;
 }
 /* /price */
 
@@ -1605,6 +1605,17 @@ TABLE.price TD .ico.disabled{
  }
 
  .slick-slide img{
+  width: 100%;
+ }
+
+ #b24_main #row_1 .screen{
+  width: 320px;
+  margin-left: -160px;
+ }
+ #b24_main #row_1 .screen img{
+  width: 100%;
+ }
+ #b24_main #row_1 .screen_text{
   width: 100%;
  }
 
