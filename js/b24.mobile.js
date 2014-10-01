@@ -1,6 +1,6 @@
 // Inits
 $(document).ready(function() {
-  /*SCarousel();*/
+  SCarousel();
   THeader();
   SForm();
   MMenu();
