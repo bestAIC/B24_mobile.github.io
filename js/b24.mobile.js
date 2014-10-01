@@ -5,7 +5,7 @@ $(document).ready(function() {
   SForm();
   MMenu();
   STable();
-  inpSearch();
+  InpSearch();
 });
 
 
@@ -156,15 +156,19 @@ function SForm() {
 
 
 // Input inpSearch
-function inpSearch(){
+function InpSearch(){
   var that = $('input[placeholder]');
   
   that.each(function(){
     var val = $(this);
       $(this).focus(function() {
         if ( this.placeholder == "Что ищем?" ) {
-          this.placeholder = '';
+          this.placeholder = "";
         }
+      }).blur(function() {
+         if ( this.placeholder == "" ) {
+           this.placeholder = "Что ищем?";
+         } 
       });
   })
 }
