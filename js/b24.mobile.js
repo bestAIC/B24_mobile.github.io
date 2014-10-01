@@ -1,9 +1,7 @@
 // Inits
 $(document).ready(function() {
-  SCarousel();
-  if($('#b24_price').length){
-    THeader();
-  }
+  /*SCarousel();*/
+  THeader();
   SForm();
   MMenu();
   STable();
@@ -16,7 +14,7 @@ function THeader() {
   $(window).on('scroll', function(){ 
 
     var wTop = ($(document).scrollTop())-1,
-        tTop = ($('#b24_price #row_2').offset().top)-130;
+        tTop = ($('#row_2').offset().top)-130;
 
     $('#header').css({top: wTop});
 
