@@ -5,6 +5,7 @@ $(document).ready(function() {
   SForm();
   MMenu();
   STable();
+  inpSearch();
 });
 
 
@@ -65,6 +66,7 @@ function MMenu() {
 // Carousel
 function SCarousel() {
   $('.slider').slick({
+    lazyLoad: 'ondemand',
     dots:true
   });
 }
@@ -150,4 +152,19 @@ function SForm() {
     $('select').styler({
       selectSearchLimit: 1000
     });     
+}
+
+
+// Input inpSearch
+function inpSearch(){
+  var that = $('input[placeholder]');
+  
+  that.each(function(){
+    var val = $(this);
+      $(this).focus(function() {
+        if ( this.placeholder == "Что ищем?" ) {
+          this.placeholder = '';
+        }
+      });
+  })
 }
