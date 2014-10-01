@@ -582,13 +582,6 @@ A.btn{
   bottom: 8px;
 }
 
-.csstransitions .menu_link.opened:before{
-  top: 0;
-}
-.csstransitions .menu_link.opened:after{
-  bottom: 0;
-}
-
 #header .logo {
   margin:0 auto;
   width:137px;
