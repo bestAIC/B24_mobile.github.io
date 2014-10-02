@@ -135,6 +135,7 @@ SPAN.icomoon{
     box-sizing: border-box;
     -mox-box-sizing: border-box;
     border: 2px solid #2fc6f7;
+    z-index: auto!important;
 }
 .bg_c_1 .jq-selectbox {
   border: 2px solid #fff;
@@ -276,45 +277,58 @@ SPAN.icomoon{
   padding:20px 0;
 }
 
-#menu .lang {
+#lang {
   position: absolute;
   bottom:20px;
   color:#a3a9ad;
+  width:90px;
 }
 
-#menu .lang B {
+#lang A {
+  color:#fff;
+}
+
+#lang B, 
+#lang A {
   position: relative;
   display:block;
-  padding:0 30px;
+  padding:0 15px 0 30px;
+  margin:0 0 5px 0;
   cursor: pointer;
 }
 
-#menu .lang B:before {
+#lang B:before,
+#lang A:before {
   content: '';
   width: 18px;
   height: 13px;
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   display: inline-block;
 }
 
-#menu .lang .ru:before {
+#lang .ru:before {
   background: url('../img/ico_flag_ru.png') 0 0 no-repeat; 
   background-size: cover;
 }
 
-#menu .lang .en:before {
-  background: url('../img/ico_flag_ru.png') 0 0 no-repeat; 
+#lang .ua:before {
+  background: url('../img/ico_flag_ua.png') 0 0 no-repeat; 
   background-size: cover;
 }
 
-#menu .lang .de:before {
-  background: url('../img/ico_flag_ru.png') 0 0 no-repeat; 
+#lang .en:before {
+  background: url('../img/ico_flag_en.png') 0 0 no-repeat; 
   background-size: cover;
 }
 
-#menu .lang B.selected:after {
+#lang .de:before {
+  background: url('../img/ico_flag_de.png') 0 0 no-repeat; 
+  background-size: cover;
+}
+
+#lang B.selected:after {
   content: '#';
   font: 15px 'icomoon_bitrix24';
   width: 15px;
@@ -324,6 +338,19 @@ SPAN.icomoon{
   right: 0;
   display: inline-block;
 }
+
+#lang .drop_lang {
+  display: none;
+  border: 1px solid #6b757b;
+  background: #a3a9ad;
+  padding:10px 5px 0px 5px;
+  margin:0 0 10px 0;
+  border-radius: 5px;
+}  
+
+#lang.open .drop_lang {
+  display: block;
+}   
 
 A.btn{
   text-decoration: none;
@@ -717,7 +744,7 @@ A.btn{
   background: #fff;
 }
 #b24_main #row_1 .slider .round_nav{
-  margin-bottom: -30px;
+  margin-bottom: -40px;
 }
 #b24_main #row_1 .round_nav SPAN {
   padding-top: 100px;    
@@ -754,7 +781,7 @@ A.btn{
   opacity: 1;
 }
 #b24_main #row_1 .screen_text{
-  height: 100px;
+  height: 65px;
   width: 70%;
   margin: 0 auto;
 }
@@ -1484,6 +1511,11 @@ TABLE.price{
   border-top: 2px solid #d0d6d9;
   border-bottom: 2px solid #d0d6d9;
 }
+
+TABLE.price .btn {
+  margin:0 0 15px 0;
+}
+
 TABLE.price tr:nth-child(odd){
   border-top: 1px solid #d0d6d9;
 }
@@ -1525,7 +1557,7 @@ TABLE.price TH[colspan]{
   color: #5b6366;
   font-size: 14px;
   line-height: 19px;
-  padding: 20px 20px 6px;
+  padding: 20px 0px 6px;
 }
 TABLE.price TD .ico{
   width: 23px;
@@ -1546,6 +1578,12 @@ TABLE.price TD .ico.active{
 TABLE.price TD .ico.disabled{
   background-color: #b0b8bb;
   line-height: 21px;
+}
+
+TABLE.price TH.colored {
+   background-color: #f1f5f6;
+   padding: 20px 0px 16px; 
+   text-transform: uppercase;  
 }
 /* /price */
 
@@ -1584,7 +1622,8 @@ TABLE.price TD .ico.disabled{
 }
 
 #b24_main #row_1 H2 {
-  padding:48px 0 26px;
+  padding:26px 0 26px;
+  margin-bottom: 0;
 }
 #b24_main #row_1 {
   color:#fff;

@@ -6,6 +6,7 @@ $(document).ready(function() {
   MMenu();
   STable();
   InpSearch();
+  SLang();
 });
 
 
@@ -75,6 +76,13 @@ function MMenu() {
   });                                                           
 }
 
+// Switch language
+function SLang() {
+  $('#lang .selected').on('click', function(){
+    $('#lang').toggleClass('open'); 
+  });
+}
+
 
 // Carousel
 function SCarousel() {
@@ -101,13 +109,15 @@ function STable() {
         $('#drag_cover table').animate({left:'0'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200);
         $('#drag_cover .pseudo_table.pos').animate({left: '-100%'});
+        $('.star').fadeOut(200);
       } else {
         $('#toggle span').removeClass('active');
         $('#toggle .cloud').addClass('active');   
         $('#toggle .toggle_limiter div').animate({left:'0'}, 200); 
         $('#drag_cover table').animate({left: '33.33333%'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200); 
-        $('#drag_cover .fixed .pseudo_table').animate({left:'0'});             
+        $('#drag_cover .fixed .pseudo_table').animate({left:'0'}); 
+        $('.star').fadeIn(200);            
       } 
 
     },    
@@ -125,12 +135,12 @@ function STable() {
       $('#toggle .toggle_limiter div').animate({left: '50%'});
       $('#drag_cover table').animate({left:'0'});
       $('#drag_cover .fixed .pseudo_table.pos').animate({left: '-100%'});
-
+      $('.star').fadeOut(200);
     } else { 
       $('#toggle .toggle_limiter div').animate({left:'0'});
       $('#drag_cover table').animate({left: '33.33333%'}); 
       $('#drag_cover .fixed .pseudo_table').animate({left:'0'});
-
+      $('.star').fadeIn(200);  
     } 
 
     var center = $('#drag_cover table').position().left;
