@@ -30,15 +30,15 @@ function THeader() {
     }
 
     if (wTop>tTop+88){ 
-      $('#drag_cover .fixed').css({
+      $('#drag_cover .fixed .pseudo_table').css({
         top: '108px',
         position: 'fixed'
-      });
+      }).addClass('pos');
     } else {
-      $('#drag_cover .fixed').css({
+      $('#drag_cover .fixed .pseudo_table').css({
         top: 'auto',
-        position: 'absolute'  
-      });
+        position: 'relative'  
+      }).removeClass('pos');;
     }
 
 
@@ -54,13 +54,13 @@ function MMenu() {
     if ($(this).hasClass('closed')) {     
       $(this).addClass('opened').removeClass('closed');  
       $('#header, #cover, #footer').animate({left:'66%'});
-      $('#header .header_cover, #toggle_cover, #drag_cover .fixed').animate({'margin-left':'0.1'});
+      $('#header .header_cover, #toggle_cover, #drag_cover .fixed .pseudo_table').animate({left:'66%'});
       $('.menu_cover').animate({left:0});
       $('#menu').css({'z-index':'2'});
     } else { 
       $(this).addClass('closed').removeClass('opened');
       $('#header, #cover, #footer').animate({left:0});
-      $('#header .header_cover, #toggle_cover, #drag_cover .fixed').animate({'margin-left':'0'});
+      $('#header .header_cover, #toggle_cover, #drag_cover .fixed .pseudo_table').animate({left:'0'});
       $('.menu_cover').animate({left:'-66%'});
       $('#menu').css({'z-index':'auto'}); 
     } 
@@ -92,12 +92,14 @@ function STable() {
         $('#toggle .toggle_limiter div').animate({left: '50%'}, 200); 
         $('#drag_cover table').animate({left:'0'}, 200); 
         $('#drag_cover .centred DIV').animate({left:center},200);
+        $('#drag_cover .pseudo_table.pos').animate({left: '-100%'});
       } else {
         $('#toggle span').removeClass('active');
         $('#toggle .cloud').addClass('active');   
         $('#toggle .toggle_limiter div').animate({left:'0'}, 200); 
         $('#drag_cover table').animate({left: '33.33333%'}, 200); 
-        $('#drag_cover .centred DIV').animate({left:center},200);              
+        $('#drag_cover .centred DIV').animate({left:center},200); 
+        $('#drag_cover .fixed .pseudo_table').animate({left:'0'});             
       } 
 
     },    
@@ -114,12 +116,12 @@ function STable() {
     if ($('#toggle .box').hasClass('active')) {     
       $('#toggle .toggle_limiter div').animate({left: '50%'});
       $('#drag_cover table').animate({left:'0'});
-      $('#drag_cover .fixed').animate({'margin-left': '0.1'});
+      $('#drag_cover .fixed .pseudo_table.pos').animate({left: '-100%'});
 
     } else { 
       $('#toggle .toggle_limiter div').animate({left:'0'});
       $('#drag_cover table').animate({left: '33.33333%'}); 
-      $('#drag_cover .fixed').animate({'margin-left': '0'});
+      $('#drag_cover .fixed .pseudo_table').animate({left:'0'});
 
     } 
 

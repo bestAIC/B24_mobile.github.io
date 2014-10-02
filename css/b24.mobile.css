@@ -1021,26 +1021,23 @@ A.btn{
   padding:0 0 80px 0;
 }
 
-
-#drag_cover .fixed {
-  position: absolute;
-  width: 100%; 
-  z-index: 99;
-  background: #fff; 
-}
-
-#drag_cover .fixed TR {
-  max-width: 736px;
-  width: 100%;
-  display: block;
-}
 #drag_cover .fixed TD {
   border-top:none;
-  display: block;
-  width: 200%; 
-  overflow: hidden; 
   padding: 0;
 }
+
+#drag_cover .fixed .pseudo_table {
+  position: relative;
+  z-index: 99;
+  width:100%;
+  overflow: hidden; 
+  background: #fff;
+}
+
+#drag_cover .fixed .pos {
+  width:200%!important;
+}
+
 
 #drag_cover #group_1,
 #drag_cover #group_2 {
