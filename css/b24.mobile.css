@@ -1024,6 +1024,7 @@ A.btn{
 #drag_cover .fixed TD {
   border-top:none;
   padding: 0;
+  height:90px;
 }
 
 #drag_cover .fixed .pseudo_table {
@@ -1032,6 +1033,24 @@ A.btn{
   width:100%;
   overflow: hidden; 
   background: #fff;
+}
+
+#drag_cover .fixed .pseudo_table P {
+  font: 17px/18px "geometria_medium",sans-serif;
+  margin-bottom: 2px;
+  color:#000;
+  padding: 12px 0 0 0;
+}
+
+#drag_cover .fixed .pseudo_table SPAN {
+  color: #2fc6f7;
+  font: 20px/17px "geometria_regular",sans-serif;
+  padding: 12px 0 12px;
+  display: inline-block;
+}
+
+#drag_cover .fixed .pseudo_table SPAN SMALL {
+  font-size:12px;
 }
 
 #drag_cover .fixed .pos {
@@ -1065,11 +1084,6 @@ A.btn{
   text-align: center;
   width: 50%;
 }
-
-#drag_cover .top_pad {
-  padding: 80px 0 22px 0;
-}
-
 
 #footer {
   background: #46535a;
@@ -1473,6 +1487,16 @@ TABLE.price{
 TABLE.price tr:nth-child(odd){
   border-top: 1px solid #d0d6d9;
 }
+
+#b24_price TABLE.price tr:nth-child(odd){
+  border-top:none;
+}
+
+#b24_price TABLE.price tr:nth-child(even){
+  border-top: 1px solid #d0d6d9;
+}
+
+
 TABLE.price tr:first-child{
   border-top: none;
 }
