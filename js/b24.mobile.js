@@ -34,11 +34,19 @@ function THeader() {
         top: '108px',
         position: 'fixed'
       }).addClass('pos');
+
+      if ($('#toggle .box').hasClass('active')){ 
+        $('#drag_cover .fixed .pseudo_table').css({
+          left:'-100%'
+        });
+      }
+
     } else {
       $('#drag_cover .fixed .pseudo_table').css({
         top: 'auto',
+        left: 'auto',
         position: 'relative'  
-      }).removeClass('pos');;
+      }).removeClass('pos');
     }
 
 
