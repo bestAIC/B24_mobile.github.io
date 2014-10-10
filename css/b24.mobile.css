@@ -767,9 +767,9 @@ A.btn{
   background-image: -moz-linear-gradient(top, #d9ff47, #30c6f6); 
   background-image: -o-linear-gradient(top, #d9ff47, #30c6f6); 
   background-image: linear-gradient(top, #d9ff47, #30c6f6); 
-    -webkit-box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow:    0px 20px 20px 5px rgba(0, 0, 0, 0.15);
-  box-shadow:         0px 20px 20px 5px rgba(0, 0, 0, 0.15);     
+    -webkit-box-shadow: 0px 17px 20px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:    0px 17px 20px 3px rgba(0, 0, 0, 0.1);
+  box-shadow:         0px 17px 20px 3px rgba(0, 0, 0, 0.1);
 }
 
 #b24_main #row_1 .slick-active .r_i EM {
