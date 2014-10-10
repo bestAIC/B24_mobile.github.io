@@ -662,6 +662,7 @@ A.btn{
 
 .slider .round_nav {
   height:105px;
+  /*height:82px;*/
   margin:45px 0 0 0;
   position: relative; 
   border-top: 2px solid #81e3fa;
@@ -726,10 +727,70 @@ A.btn{
 
 /* #b24_main rows */
 #b24_main #row_1 .round_nav B {
-  height: 144px;
-  width: 94px;
-  top:-47px;     
+  height: 89px;
+  width: 89px;
+  top:-47px;
+  border-radius:89px;
+  background:#fff;     
 }
+
+#b24_main #row_1 .r_i {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius:89px;
+  border:7px solid #2dd1f7;
+  background:#fff;
+}
+
+#b24_main #row_1 .r_i EM {
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: absolute;
+  z-index: 9;
+  top:3px;
+  width: 100%;
+  height: 100%; 
+  text-align: center;
+  line-height: 71px; 
+  color:#fff; 
+  font-size: 36px;  
+}
+
+#b24_main #row_1 .slick-active .r_i {
+  border:7px solid #fff;
+  background-image: -webkit-linear-gradient(top, #d9ff47, #30c6f6); 
+  background-image: -moz-linear-gradient(top, #d9ff47, #30c6f6); 
+  background-image: -o-linear-gradient(top, #d9ff47, #30c6f6); 
+  background-image: linear-gradient(top, #d9ff47, #30c6f6);     
+}
+
+#b24_main #row_1 .slick-active .r_i EM {
+  color:#9be2ff;
+}
+
+#b24_main #row_1  .r_i:before {
+  content: '';
+  display:block;
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius:71px; 
+  top:2px;
+  left:2px; 
+  width: 71px;
+  height: 71px;
+  background: #2dd1f7;
+}
+
+#b24_main #row_1 .slick-active .r_i:before {
+  background: #fff;
+}
+
 
 #b24_main #row_1 .round_nav B:after {
   display:none;
@@ -747,7 +808,7 @@ A.btn{
   margin-bottom: -40px;
 }
 #b24_main #row_1 .round_nav SPAN {
-  padding-top: 100px;    
+  /*padding-top: 100px;*/    
 }
 #b24_main #row_1 .screen {
   width:480px;
@@ -804,6 +865,8 @@ A.btn{
 #b24_main #row_1 .slick-active.slick-slide .round_nav SPAN{
   text-indent: -9999px;
 }
+
+/*
 #b24_main #row_1 .n1.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_1.png');}
 #b24_main #row_1 .n1.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_1_a.png');}
 #b24_main #row_1 .n2.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_2.png');}
@@ -830,6 +893,7 @@ A.btn{
 #b24_main #row_1 .n12.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_12_a.png');}
 #b24_main #row_1 .n13.slick-slide .round_nav SPAN{background-image: url('../img/ico_round_13.png');}
 #b24_main #row_1 .n13.slick-slide.slick-active .round_nav SPAN{background-image: url('../img/ico_round_13_a.png');}
+*/
 
 #b24_main #row_5 .round_nav SPAN,
 #b24_main #row_7 .round_nav SPAN {
